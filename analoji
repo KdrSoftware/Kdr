@@ -1,0 +1,10 @@
+ucak = set(["uçar","kanatlı","görmez"])
+kus = set(["uçar","kanatlı","görür"])
+at = set(["uçamaz","kanatsız","görür"])
+genel_kume = set([])
+genel_kume = genel_kume.union(ucak,kus,at)
+for i in genel_kume:
+    ayrisim = genel_kume.copy()
+    ayrisim.discard(i)
+    for x in ayrisim:
+        print(i + "/" + x)
